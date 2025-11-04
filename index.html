@@ -17,15 +17,18 @@
     <section id="header">
         <a href="#"><img src="John Pon Prom Ma Jhun.png" alt="" class="logo"></a>
         <div>
-        <ul id="navbar">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li id="lg-bag"><a href="cart.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
-            <a href="#" id="close"><i class="fa fa-times"></i></a>
-        </ul>
+            <ul id="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <form class="search-bar" onsubmit="return goToShop();">
+                    <input type="text" placeholder="search anything" name="q" id="searchInput" onkeyup="search()">
+                    <button type="submit" class="searching">search</button>
+                </form>
+                <li id="lg-bag"><a href="cart.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
+                <a href="#" id="close"><i class="fa fa-times"></i></a>
+            </ul>
         </div>
         <div id="mobile">
             <a href="cart.html"><i class="fa fa-shopping-basket"></i></a>
@@ -547,6 +550,16 @@
         </div>
     </footer>
 
+    <script>
+        function goToShop() {
+            const query = document.getElementById("searchInput").value.trim();
+            if (query) {
+                // ไปที่ shop.html พร้อมส่งคำค้นใน URL
+                window.location.href = "shop.html?search=" + encodeURIComponent(query);
+            }
+            return false; // ป้องกันการ reload หน้า
+        }
+    </script>
     <script src="script.js"></script>
     <script src="jQuery.js"></script>
     <script>

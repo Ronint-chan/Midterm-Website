@@ -136,6 +136,41 @@ body {
     left: 20px;
 }
 
+#navbar .search-bar {
+    display: flex;
+    background: #ffffff;
+    padding: 5px;
+    border-radius: 60px;
+}
+
+#header #navbar .search-bar input{
+    padding: 8px 15px;
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    color: #1a1a1a;
+    border-radius: 10px;
+    margin: 0 0 0 5px;
+}
+
+::placeholder {
+    color: #bebdc5;
+}
+
+#navbar .search-bar .searching {
+    border: 0;
+    border-radius: 15px;
+    padding: 8px 15px;
+    background: #e3e6f3;
+    cursor: pointer;
+}
+
+#navbar .search-bar .searching:hover {
+    background-color: #86B4BD;
+    transition: 0.3s;
+}
+
 #mobile {
     display: none;
     align-items: center;
