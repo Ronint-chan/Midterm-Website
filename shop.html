@@ -13,18 +13,21 @@
 </head>
 
 <body>
+
+    <div class="logo-fixed">
+        <img src="logo1.png" alt="Logo">
+    </div>
     
     <section id="header">
-        <a href="#"><img src="John Pon Prom Ma Jhun.png" alt="" class="logo"></a>
         <div>
         <ul id="navbar">
             <li><a href="index.html">Home</a></li>
             <li><a href="shop.html" class="active">Shop</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <form action="" class="search-bar">
+            <form class="search-bar" onsubmit="return filterProducts();">
                     <input type="text" placeholder="search anything" name="q" id="searchInput" onkeyup="search()">
-                    <button type="submit" class="searching" id="searchBtn">search</button>
+                    <button type="submit" class="searching">search</button>
             </form>
             <li id="lg-bag"><a href="cart.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
             <a href="#" id="close"><i class="fa fa-times"></i></a>
@@ -46,7 +49,7 @@
         <h2 class="block">Featured Products</h2>
         <p> Animation / Website Development / Arts</p>
         <div class="pro-container view">
-            <div class="pro block">
+           <div class="pro" onclick="window.location.href='product-loop-AE.html';">
                 <video autoplay loop>
                 <source src="248_Chanpum_HW1_Motion loop.mp4" type="video/mp4">
                 </video>
@@ -64,7 +67,7 @@
                 </div>
                 <a href="# " class="i-cart"><i class="fa fa-shopping-cart cart"></i></a>
             </div>
-            <div class="pro block" onclick="window.location.href='product.html';">
+            <div class="pro" onclick="window.location.href='product.html';">
                 <video autoplay loop muted>
                 <source src="204 knogkrit 228 Rapepong 224 pathanasan 248 Chanpum HW3 lyrics animation.mp4" type="video/mp4">
                 </video>
@@ -82,7 +85,7 @@
                 </div>
                 <a href="# " class="i-cart"><i class="fa fa-shopping-cart cart"></i></a>
             </div>
-            <div class="pro block">
+            <div class="pro" onclick="window.location.href='product-regensu.html';">
                 <video autoplay loop muted>
                 <source src="shortfilm1.mp4" type="video/mp4">
                 </video>
@@ -100,7 +103,7 @@
                 </div>
                 <a href="# " class="i-cart"><i class="fa fa-shopping-cart cart"></i></a>
             </div>
-            <div class="pro block">
+            <div class="pro" onclick="window.location.href='product-regensu.html';">
                 <img src="mek-art.jpg" alt="">
                 <div class="description">
                     <span>Art</span>
@@ -116,13 +119,47 @@
                 </div>
                 <a href="# " class="i-cart"><i class="fa fa-shopping-cart cart"></i></a>
             </div>
-            <div class="pro block">
-                <video autoplay loop>
-                <source src="248_Chanpum_HW1_Motion loop.mp4" type="video/mp4">
+            <div class="pro" onclick="window.location.href='product-regensu.html';">
+                <video autoplay loop muted>
+                <source src="Alpha_Luma matte.mp4" type="video/mp4">
                 </video>
                 <div class="description">
                     <span>3d Animation</span>
-                    <h5>Pinball Animation AfterEffect</h5>
+                    <h5>Su Ling AE</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4>$68.42</h4>
+                </div>
+                <a href="# " class="i-cart"><i class="fa fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='product-regensu.html';">
+                <video autoplay loop muted>
+                <source src="204_Kongkrid_HW1_MotionLoop.mp4" type="video/mp4">
+                </video>
+                <div class="description">
+                    <span>Animation</span>
+                    <h5>Car Loop Animation</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4>$3.89</h4>
+                </div>
+                <a href="# " class="i-cart"><i class="fa fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='product-regensu.html';">
+                <img src="picart-bhud.png" alt="" height="210px" width="100%">
+                <div class="description">
+                    <span>Art</span>
+                    <h5>Picart by Bhud</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -134,61 +171,25 @@
                 </div>
                 <a href="# " class="i-cart"><i class="fa fa-shopping-cart cart"></i></a>
             </div>
-            <div class="pro block">
-                <video autoplay loop>
-                <source src="248_Chanpum_HW1_Motion loop.mp4" type="video/mp4">
+            <div class="pro" onclick="window.location.href='product-regensu.html';">
+                <video autoplay loop muted>
+                <source src="HW5_Factory_Tour.mp4" type="video/mp4">
                 </video>
                 <div class="description">
-                    <span>3d Animation</span>
-                    <h5>Pinball Animation AfterEffect</h5>
+                    <span>Animation</span>
+                    <h5>R.E.P.O Animation AfterEffect</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
                     </div>
                     <h4>$12.33</h4>
                 </div>
                 <a href="# " class="i-cart"><i class="fa fa-shopping-cart cart"></i></a>
             </div>
-            <div class="pro block">
-                <video autoplay loop>
-                <source src="248_Chanpum_HW1_Motion loop.mp4" type="video/mp4">
-                </video>
-                <div class="description">
-                    <span>3d Animation</span>
-                    <h5>Pinball Animation AfterEffect</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$12.33</h4>
-                </div>
-                <a href="# " class="i-cart"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="pro block">
-                <video autoplay loop>
-                <source src="248_Chanpum_HW1_Motion loop.mp4" type="video/mp4">
-                </video>
-                <div class="description">
-                    <span>3d Animation</span>
-                    <h5>Pinball Animation AfterEffect</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$12.33</h4>
-                </div>
-                <a href="# " class="i-cart"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="pro block">
+            <div class="pro">
                 <video autoplay loop>
                 <source src="248_Chanpum_HW1_Motion loop.mp4" type="video/mp4">
                 </video>
@@ -206,7 +207,7 @@
                 </div>
                 <a href="# " class="i-cart"><i class="fa fa-shopping-cart cart"></i></a>
             </div>
-            <div class="pro block">
+            <div class="pro">
                 <video autoplay loop muted>
                 <source src="204 knogkrit 228 Rapepong 224 pathanasan 248 Chanpum HW3 lyrics animation.mp4" type="video/mp4">
                 </video>
@@ -224,7 +225,7 @@
                 </div>
                 <a href="# " class="i-cart"><i class="fa fa-shopping-cart cart"></i></a>
             </div>
-            <div class="pro block">
+            <div class="pro">
                 <video autoplay loop muted>
                 <source src="shortfilm1.mp4" type="video/mp4">
                 </video>
@@ -242,7 +243,7 @@
                 </div>
                 <a href="# " class="i-cart"><i class="fa fa-shopping-cart cart"></i></a>
             </div>
-            <div class="pro block">
+            <div class="pro">
                 <img src="mek-art.jpg" alt="">
                 <div class="description">
                     <span>Art</span>
@@ -255,78 +256,6 @@
                         <i class="fas fa-star"></i>
                     </div>
                     <h4>$56.88</h4>
-                </div>
-                <a href="# " class="i-cart"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="pro block">
-                <video autoplay loop>
-                <source src="248_Chanpum_HW1_Motion loop.mp4" type="video/mp4">
-                </video>
-                <div class="description">
-                    <span>3d Animation</span>
-                    <h5>Pinball Animation AfterEffect</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$12.33</h4>
-                </div>
-                <a href="# " class="i-cart"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="pro block">
-                <video autoplay loop>
-                <source src="248_Chanpum_HW1_Motion loop.mp4" type="video/mp4">
-                </video>
-                <div class="description">
-                    <span>3d Animation</span>
-                    <h5>Pinball Animation AfterEffect</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$12.33</h4>
-                </div>
-                <a href="# " class="i-cart"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="pro block">
-                <video autoplay loop>
-                <source src="248_Chanpum_HW1_Motion loop.mp4" type="video/mp4">
-                </video>
-                <div class="description">
-                    <span>3d Animation</span>
-                    <h5>Pinball Animation AfterEffect</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$12.33</h4>
-                </div>
-                <a href="# " class="i-cart"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="pro block">
-                <video autoplay loop>
-                <source src="248_Chanpum_HW1_Motion loop.mp4" type="video/mp4">
-                </video>
-                <div class="description">
-                    <span>3d Animation</span>
-                    <h5>Pinball Animation AfterEffect</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$12.33</h4>
                 </div>
                 <a href="# " class="i-cart"><i class="fa fa-shopping-cart cart"></i></a>
             </div>
@@ -402,47 +331,84 @@
         </div>
     </footer>
 
-    <script>
-    document.addEventListener("DOMContentLoaded", function() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const searchParam = urlParams.get("search");
-
-    if (!searchParam) return;
-
-    const searchValue = searchParam.trim().toUpperCase();
-    const products = document.querySelectorAll(".pro.block");
-    let found = false;
-
-    products.forEach(product => {
-        const nameElement = product.querySelector("h5");
-        const categoryElement = product.querySelector(".description span");
-
-        const nameText = nameElement ? nameElement.textContent.toUpperCase() : "";
-        const categoryText = categoryElement ? categoryElement.textContent.toUpperCase() : "";
-        const combinedText = nameText + " " + categoryText;
-
-        if (combinedText.indexOf(searchValue) > -1) {
-        product.style.display = "";
-        found = true;
-        } else {
-        product.style.display = "none";
-        }
-    });
-
-    if (!found) {
-        const container = document.querySelector(".pro-container");
-        const msg = document.createElement("div");
-        msg.textContent = `ไม่พบสินค้าที่ตรงกับคำค้นหา "${searchParam}"`;
-        msg.style.fontSize = "1.2em";
-        msg.style.marginTop = "2em";
-        msg.style.textAlign = "center";
-        msg.style.color = "#666";
-        container.appendChild(msg);
-    }
-    });
-    </script>
-
     <script src="script.js"></script>
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param) || '';
+        }
+
+        function filterProducts(inputValue = null) {
+            const input = inputValue !== null ? inputValue.toUpperCase() : document.getElementById("searchInput")?.value.toUpperCase() || "";
+            const products = document.querySelectorAll(".pro");
+            let found = false;
+
+            products.forEach(product => {
+                const name = product.querySelector("h5")?.textContent.toUpperCase() || "";
+                const category = product.querySelector(".description span")?.textContent.toUpperCase() || "";
+                const combined = name + " " + category;
+
+                if (combined.indexOf(input) > -1) {
+                    product.style.display = "";
+                    found = true;
+                } else {
+                    product.style.display = "none";
+                }
+            });
+
+            // แสดงข้อความไม่เจอสินค้า
+            const container = document.querySelector(".pro-container");
+            if (!container) return;
+            const oldMsg = container.querySelector(".no-results");
+            if (oldMsg) oldMsg.remove();
+
+            if (!found && input) {
+                const msg = document.createElement("div");
+                msg.className = "no-results";
+                msg.textContent = `ไม่พบสินค้าที่ตรงกับคำค้นหา "${input}"`;
+                msg.style.fontSize = "1.2em";
+                msg.style.marginTop = "2em";
+                msg.style.textAlign = "center";
+                msg.style.color = "#666";
+                container.appendChild(msg);
+            }
+        }
+
+        // สำหรับ index.html: ส่งไป shop.html
+        function submitSearch(event) {
+            event.preventDefault();
+            const query = document.getElementById("searchInput").value.trim();
+            if (query) {
+                window.location.href = `shop.html?search=${encodeURIComponent(query)}`;
+            } else {
+                window.location.href = "shop.html";
+            }
+        }
+
+        // ถ้าอยู่ shop.html ให้กรองตอนโหลดจาก query string
+        document.addEventListener("DOMContentLoaded", function() {
+            const searchInput = document.getElementById("searchInput");
+            if (searchInput) {
+                // ถ้า query string มี search
+                const searchQuery = getQueryParam("search");
+                if (searchQuery) {
+                    searchInput.value = searchQuery;
+                    filterProducts(searchQuery);
+                }
+
+                // live filter ขณะพิมพ์
+                searchInput.addEventListener("keyup", function() {
+                    filterProducts(this.value);
+                });
+
+                // submit form
+                const form = searchInput.closest("form");
+                if (form) {
+                    form.onsubmit = submitSearch;
+                }
+            }
+        });
+    </script>
     <script src="jQuery.js"></script>
     <script>
         jQuery(document).ready(function($){

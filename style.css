@@ -89,10 +89,23 @@ body {
 
 /* Header Start */
 
+.logo-fixed {
+    width: 100%;
+    justify-content: center;
+    background: #e3e6f3; /* ใส่พื้นหลังไม่ให้โปร่ง */
+    z-index: 1000;     /* อยู่เหนือทุกอย่าง */
+    text-align: center;
+    padding: 25px 0;
+}
+
+.logo-fixed img {
+    width: 240px;
+}
+
 #header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px 80px;
     background: #e3e6f3;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
@@ -135,6 +148,8 @@ body {
     bottom: -4px;
     left: 20px;
 }
+
+/* Searching Section */
 
 #navbar .search-bar {
     display: flex;
@@ -826,7 +841,16 @@ footer .copyright {
 }
 
 #prodetails .single-pro-details h6 {
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: 200;
+    color: #88878d;
+}
+
+#prodetails .single-pro-details a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 200;
+    color: #88878d;
 }
 
 #prodetails .single-pro-details h4 {
@@ -835,6 +859,7 @@ footer .copyright {
 
 #prodetails .single-pro-details h2 {
     font-size: 26px;
+    color: #088178;
 }
 
 #prodetails .single-pro-details select {
@@ -851,13 +876,20 @@ footer .copyright {
     white-space: nowrap;
     border: 0;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+#prodetails .single-pro-details button:hover {
+    background-color: #fff;
+    color: #088178;
+    border: 1px solid #088178;
 }
 
 #prodetails .single-pro-details span {
     line-height: 25px;
 }
 
-/* Media Query */
+/* ---------------------------------------------- Media Query----------------------------------------- */
 
 @media (max-width : 399px) {
 
