@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JohnPonPromMaJhun</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+
+</head>
+
+<body>
+
+    <div class="logo-fixed">
+        <img src="logo1.png" alt="Logo">
+    </div>
+    
+    <section id="header">
+        <div>
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <form class="search-bar" onsubmit="return filterProducts();">
+                    <input type="text" placeholder="search anything" name="q" id="searchInput" onkeyup="search()">
+                    <button type="submit" class="searching">search</button>
+            </form>
+            <li id="lg-bag"><a href="cart.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
+            <a href="#" id="close"><i class="fa fa-times"></i></a>
+        </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa fa-shopping-basket"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+
+    </section>
+
+    <section id="page-header">
+        <h2>JohnPonPromMaJhun</h2>
+        <p>Know More About Us</p>
+    </section>
+
+    <section id="about-head">
+         <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slide-1" src="Bhud-agent.jpg" alt="Bhud"/>
+                <img id="slide-2" src="jin2-agent.jpg" alt="C"/>
+                <img id="slide-3" src="song-agent.jpg" alt="Song"/>
+                <img id="slide-4" src="nint-agent.jpg" alt="Nint"/>
+                <img id="slide-5" src="jin-agent.jpg" alt="Jin"/>
+                <img id="slide-6" src="Bhud-agent.jpg" alt="Fongwin"/>
+                <img id="slide-7" src="jin2-agent.jpg" alt="Mek"/>
+                <img id="slide-8" src="Bhud-agent.jpg" alt="Aom"/>
+            </div>
+        </div>
+        <div class="about-text">
+        <h2>Who are WE?</h2>
+        <p>“JohnPonPromMaJhun” is a collective of university students who share an 
+            aspiration to cultivate their individual talents. Although each member 
+            possesses distinct aptitudes and personal interests, we have come together with a shared 
+            commitment to collaborate and create. This website stands as a testament to that 
+            collaboration — a space where we gather our diverse works and present them to a wider 
+            audience. Here, we hope people from all backgrounds can discover, appreciate, and support 
+            what we do. 
+        </p>
+        </div>
+    </section>
+
+    <section id="blog" class="section-p1">
+        <h2 class="block">TEAM MEMBER</h2>
+        <p class="block"> The Crew of JohnPonPromMaJhun</p>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="Nut-suit1.JPG" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>Nut Tarapantchai</h4>
+                <p>A specialist in web and software development at JohnPonPromMaJhun, he is one of the group’s founders and the principal driving force behind the creation of the website. He leads the development process and 
+                    oversees the curation and maintenance of the team’s diverse body of work.</p>
+            </div>
+            <h1>Nint</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="Bhud-suit3.JPG" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>Bhudthikorn Thongdamri</h4>
+                <p>Bhud is a key member of our animation team. He has produced numerous visually compelling works and has a strong passion for illustration and 3D motion 
+                    graphics. He is regarded as one of our most skilled animators.</p>
+                <a href="#">EXPLORE PRODUCTS</a>
+            </div>
+            <h1>Bhud</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="C-suit1.JPG" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>Rapepong</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="#">EXPLORE PRODUCTS</a>
+            </div>
+            <h1 style="margin-left: 65px;">C</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="Song-suit3.JPG" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>Kongkrid Inprom</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="#">EXPLORE PRODUCTS</a>
+            </div>
+            <h1>Song</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="Jin-suit3.JPG" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>Chanpum fdfdfdf</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="#">EXPLORE PRODUCTS</a>
+            </div>
+            <h1 style="margin-left: 60px;">Jin</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="Nut-suit1.JPG" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>Nut Tarapantchai</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="#">EXPLORE PRODUCTS</a>
+            </div>
+            <h1>Nut</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="Fong-suit2.JPG" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>Ratthaphum</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="#">EXPLORE PRODUCTS</a>
+            </div>
+            <h1>Fong</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="Nut-suit1.JPG" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>Nut Tarapantchai</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="#">EXPLORE PRODUCTS</a>
+            </div>
+            <h1>Nut</h1>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up Now</h4>
+            <p>Get Email updates about our latest news and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img src="John Pon Prom Ma Jhun.png" alt="">
+            <h4>Contract</h4>
+            <p><strong>Address : </strong> 26 Pracha Uthit Rd, Bang Mot, Thung Khru, Bangkok 10140</p>
+            <p><strong>Phone : </strong>088888888</p>
+            <p><strong>Hours : </strong>24/7, Mon-Sun</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contract Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="app.jpg" alt="">
+                <img src="play.jpg" alt="">
+                <p>Secured Payment Gateway</p>
+                <img src="pay.png" alt="">
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>2025, JohnPonPromMaJhun - HTML CSS Website</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param) || '';
+        }
+
+        function filterProducts(inputValue = null) {
+            const input = inputValue !== null ? inputValue.toUpperCase() : document.getElementById("searchInput")?.value.toUpperCase() || "";
+            const products = document.querySelectorAll(".pro");
+            let found = false;
+
+            products.forEach(product => {
+                const name = product.querySelector("h5")?.textContent.toUpperCase() || "";
+                const category = product.querySelector(".description span")?.textContent.toUpperCase() || "";
+                const combined = name + " " + category;
+
+                if (combined.indexOf(input) > -1) {
+                    product.style.display = "";
+                    found = true;
+                } else {
+                    product.style.display = "none";
+                }
+            });
+
+            // แสดงข้อความไม่เจอสินค้า
+            const container = document.querySelector(".pro-container");
+            if (!container) return;
+            const oldMsg = container.querySelector(".no-results");
+            if (oldMsg) oldMsg.remove();
+
+            if (!found && input) {
+                const msg = document.createElement("div");
+                msg.className = "no-results";
+                msg.textContent = `ไม่พบสินค้าที่ตรงกับคำค้นหา "${input}"`;
+                msg.style.fontSize = "1.2em";
+                msg.style.marginTop = "2em";
+                msg.style.textAlign = "center";
+                msg.style.color = "#666";
+                container.appendChild(msg);
+            }
+        }
+
+        // สำหรับ index.html: ส่งไป shop.html
+        function submitSearch(event) {
+            event.preventDefault();
+            const query = document.getElementById("searchInput").value.trim();
+            if (query) {
+                window.location.href = `shop.html?search=${encodeURIComponent(query)}`;
+            } else {
+                window.location.href = "shop.html";
+            }
+        }
+
+        // ถ้าอยู่ shop.html ให้กรองตอนโหลดจาก query string
+        document.addEventListener("DOMContentLoaded", function() {
+            const searchInput = document.getElementById("searchInput");
+            if (searchInput) {
+                // ถ้า query string มี search
+                const searchQuery = getQueryParam("search");
+                if (searchQuery) {
+                    searchInput.value = searchQuery;
+                    filterProducts(searchQuery);
+                }
+
+                // live filter ขณะพิมพ์
+                searchInput.addEventListener("keyup", function() {
+                    filterProducts(this.value);
+                });
+
+                // submit form
+                const form = searchInput.closest("form");
+                if (form) {
+                    form.onsubmit = submitSearch;
+                }
+            }
+        });
+    </script>
+    <script src="jQuery.js"></script>
+    <script>
+        jQuery(document).ready(function($){
+            $('.slider-img').on('click', function(){
+                $('.slider-img').removeClass('active');
+                $(this).addClass('active')
+            })
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+</body>
+
+</html>
