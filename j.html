@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Pizza Loves</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Spartan', sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px solid black;
+            background-color: darkmagenta;
+        }
+        .head-text {
+            margin: 10px;
+        }
+        .logo {
+            margin: 20px;
+        }
+        #menu {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        flex-wrap: wrap;
+        }
+        #menu .menu-select{
+            display: flex;
+            padding: 5px;
+            margin: 15px 30px;
+        }
+        #menu .menu-select .menu-img img{
+            width: 500px;
+            border: 3px solid #000;
+            margin-right: 25px;
+        }
+        #menu .menu-select .menu-dt {
+            padding: 15px;
+        }
+        #menu .menu-select .menu-dt h1 {
+            margin-bottom: 15px;
+        }
+        #menu .menu-select .menu-dt p {
+            margin-bottom: 15px;
+        }
+        #menu .menu-select .menu-dt .order-btn{
+            margin-bottom: 5px;
+            padding: 8px 35px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        #menu .menu-select .menu-dt .order-btn:hover {
+            padding: 15px 45px;
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head-text">
+            <h1>Multi Pizza Loves</h1>
+        </div>
+        <div class="logo">
+            <img src="John Pon Prom Ma Jhun.png" alt="">
+        </div>
+    </header>
+
+    <section id="menu">
+        <div class="menu-select">
+            <div class="menu-img"><img src="Bhud-suit1.JPG" alt=""></div>
+            <div class="menu-dt">
+                <h1>Elephant Fat</h1>
+                <p>1,000 $</p>
+                <button class="order-btn" id="Hee">order</button>
+            </div>
+        </div>
+        <div class="menu-select">
+            <div class="menu-img"><img src="Bhud-suit1.JPG" alt=""></div>
+            <div class="menu-dt">
+                <h1>Elephant Fat</h1>
+                <p>1,000 $</p>
+                <button class="order-btn" id="Hee2">order</button>
+            </div>
+        </div>
+        <div class="menu-select">
+            <div class="menu-img"><img src="Bhud-suit1.JPG" alt=""></div>
+            <div class="menu-dt">
+                <h1>Elephant Fat</h1>
+                <p>1,000 $</p>
+                <button class="order-btn" id="Hee3">order</button>
+            </div>
+        </div>
+        <div class="menu-select">
+            <div class="menu-img"><img src="Bhud-suit1.JPG" alt=""></div>
+            <div class="menu-dt">
+                <h1>Elephant Fat</h1>
+                <p>1,000 $</p>
+                <button class="order-btn" id="Hee4">order</button>
+            </div>
+        </div>
+    </section>
+
+    <button id="Hee">Click Hee</button>
+
+    <script>
+        const ClickButton = document.getElementById('Hee');
+        ClickButton.addEventListener('click', function() {
+            alert('Kuyyyyyy');
+        });
+        const ClickButton2 = document.getElementById('Hee2');
+        ClickButton2.addEventListener('click', function() {
+            alert('Kuyyyyyy');
+        });
+        const ClickButton3 = document.getElementById('Hee3');
+        ClickButton3.addEventListener('click', function() {
+            alert('Kuyyyyyy');
+        });
+        const ClickButton4 = document.getElementById('Hee4');
+        ClickButton4.addEventListener('click', function() {
+            alert('Kuyyyyyy');
+        });
+    </script>
+</body>
+</html>
