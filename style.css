@@ -204,6 +204,11 @@ body {
 
 /* Slide Promote */
 
+#slider-container .mobile-slider{
+    display: none;
+    align-items: center;
+}
+
 #slider-container {
     width: 100%;
     height: 100vh;
@@ -803,10 +808,11 @@ footer .copyright {
 
 #pagination a {
     text-decoration: none;
-    background-color: #088178;
+    background-color: #fff;
     padding: 15px 20px;
+    border: 1px solid #088178;
     border-radius: 4px;
-    color: #fff;
+    color: #088178;
     font-weight: 600;
 }
 
@@ -951,6 +957,11 @@ footer .copyright {
     padding-top: 32px;
 }
 
+.about-text .mar-text {
+    font-size: 18px;
+    color: #ffffff;
+}
+
 #blog {
     padding: 150px 150px 0 150px;
     text-align: center;
@@ -1040,7 +1051,7 @@ footer .copyright {
 
     #header .logo {
         display: flex;
-        margin-left: -55px;
+        margin-left: -5px;
         width: 100%;
         height: 50px;
     }
@@ -1071,7 +1082,7 @@ footer .copyright {
 
     #mobile {
         display: flex;
-        align-items: center;
+        margin-left: 260px;
     }
 
     #mobile i {
@@ -1117,6 +1128,15 @@ footer .copyright {
 
     .slider-img {
         display: none;
+    }
+
+    #slider-container .mobile-slider {
+        display: initial;
+    }
+
+    #slider-container .mobile-slider h2 {
+        font-size: 30px;
+        color: white;
     }
 
     /* Feature and Product */
@@ -1174,5 +1194,11 @@ footer .copyright {
 
     footer .copyright {
         text-align: start;
+    }
+
+    /* Shop section */
+
+    #page-header h2 {
+        font-size: 29px;
     }
 }
