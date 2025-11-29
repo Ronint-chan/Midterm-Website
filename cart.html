@@ -24,12 +24,12 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="shop.html">Shop</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <form class="search-bar" onsubmit="return filterProducts();">
                     <input type="text" placeholder="search anything" name="q" id="searchInput" onkeyup="search()">
                     <button type="submit" class="searching">search</button>
             </form>
-            <li id="lg-bag"><a href="cart.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
+            <li id="lg-bag"><a href="cart.html" class="active"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
             <a href="#" id="close"><i class="fa fa-times"></i></a>
         </ul>
         </div>
@@ -41,36 +41,33 @@
     </section>
 
     <section id="page-header">
-        <h2>JohnPonPromMaJhun</h2>
-        <p>Our University</p>
+        <h2>#Cart</h2>
+        <p>“If you find something you like, go ahead and make it yours.”</p>
     </section>
 
-    <section id="contact-details" class="section-p1">
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31017.653278054822!2d100.46249327957645!3d13.645189356260229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2a251bb6b0cf1%3A0xf656e94ff13324ad!2z4Lih4Lir4Liy4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4LmA4LiX4LiE4LmC4LiZ4LmC4Lil4Lii4Li14Lie4Lij4Liw4LiI4Lit4Lih4LmA4LiB4Lil4LmJ4Liy4LiY4LiZ4Lia4Li44Lij4Li1!5e0!3m2!1sth!2sth!4v1764414252527!5m2!1sth!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="map2">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31017.653278054822!2d100.46249327957645!3d13.645189356260229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2a251bb6b0cf1%3A0xf656e94ff13324ad!2z4Lih4Lir4Liy4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4LmA4LiX4LiE4LmC4LiZ4LmC4Lil4Lii4Li14Lie4Lij4Liw4LiI4Lit4Lih4LmA4LiB4Lil4LmJ4Liy4LiY4LiZ4Lia4Li44Lij4Li1!5e0!3m2!1sth!2sth!4v1764414252527!5m2!1sth!2sth" width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="detail">
-            <span>GET IN TOUCH</span>
-            <h2>Visit our university locations or contact us today</h2>
-            <h3>CEO's Contact</h3>
-            <p>Email : nut.tara@mail.kmutt.ac.th</p>
-            <p>Phone : 096-154-5144</p>
-            <p>Every day : 8.00am to 23.00pm</p>
-        </div>
-    </section>
-
-    <section id="newsletter" class="section-p1 section-m1">
-        <div class="newstext">
-            <h4>Sign Up Now</h4>
-            <p>Get Email updates about our latest news and <span>special offers.</span></p>
-        </div>
-        <div class="form">
-            <input type="text" placeholder="Your email address">
-            <button class="normal">Sign Up</button>
-        </div>
+    <section class="section-p1" id="cart">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="mek-art.jpg" alt="" height="75px"></td>
+                    <td>Drawing Pen's logo</td>
+                    <td>$56.88</td>
+                    <td><input type="number" value="1"></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
     <footer class="section-p1">

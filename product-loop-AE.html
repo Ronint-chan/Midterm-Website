@@ -25,6 +25,10 @@
             <li><a href="shop.html" class="active">Shop</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <form action="shop.html" method="GET" class="search-bar" onsubmit="return filterProducts();">
+                <input type="text" placeholder="search anything" name="q" id="searchInput" onkeyup="search()">
+                <button type="submit" class="searching">search</button>
+            </form>
             <li id="lg-bag"><a href="cart.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
             <a href="#" id="close"><i class="fa fa-times"></i></a>
         </ul>
@@ -70,9 +74,7 @@
             <button class="normal">Add To Cart</button>
             <h4>Product Details</h4>
             <span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dolor dolorem praesentium natus 
-                tempore rerum quis illo accusamus eaque asperiores officia delectus voluptate possimus fugiat 
-                maiores, odit corrupti sit aliquam.
+                Loop animation of the main character, Batman, created by “Kongkrid Inprom.”
             </span>
         </div>
     </section>

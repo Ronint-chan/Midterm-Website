@@ -244,7 +244,7 @@ body {
     transition: 0.7s ease;
 }
 
-.slider-images .slider-img:first-child, .slider-images .slider-img:last-child {
+.slider-images .slider-img:nth-child(1), .slider-images .slider-img:nth-child(7) {
     height: 380px;
     
 }
@@ -1032,6 +1032,116 @@ footer .copyright {
     color: #c9cbce;
 }
 
+/* Contact Section */
+
+#contact-details {
+    display: flex;
+    justify-content: center;
+}
+
+#contact-details .detail {
+    width: 40%;
+    margin: 0px 0px 0px 25px;
+}
+
+#contact-details .detail span {
+    font-size: 12px;
+}
+
+#contact-details .detail h2 {
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#contact-details .detail h3 {
+    font-size: 21px;
+    padding-bottom: 15px;
+}
+
+#contact-details .detail p {
+    font-size: 16px;
+    color: #514f4f;
+}
+
+#contact-details .map2 {
+    display: none;
+}
+
+/* Cart Section */
+
+#cart {
+    overflow-x: auto;
+}
+
+#cart table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img {
+    width: 110px;
+}
+
+#cart table td:nth-child(1) {
+    width: 100px;
+    text-align: center;
+}
+
+#cart table td:nth-child(2) {
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(3) {
+    width: 250px;
+    text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(5) input {
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+#cart table thead {
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table thead td {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0px;
+}
+
+#cart table tbody tr {
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table tbody tr td {
+    padding-top: 15px;
+}
+
+#cart table tbody td {
+    font-size: 13px;
+}
+
+#cart table tbody tr td a {
+    color: red;
+}
 
 /* ---------------------------------------------- Media Query----------------------------------------- */
 
@@ -1200,5 +1310,343 @@ footer .copyright {
 
     #page-header h2 {
         font-size: 29px;
+    }
+
+    /* About section */
+
+    #about-head {
+        display: inline;
+    }
+
+    #about-head .slider-wrapper .slider{
+        display: none;
+    }
+
+    #about-head .about-text {
+    width: 360px;
+    margin: 45px 0px 0px 15px;
+    }
+
+    .about-text p {
+        padding-top: 12px;
+    }
+
+    .about-text .mar-text {
+        font-size: 18px;
+        color: #ffffff;
+        width: 360px;
+    }
+
+    #blog h2 {
+        margin-left: -60px;
+    }
+
+    #blog p {
+        width: 320px;
+        margin-left: -110px;
+    }
+
+    #blog .blog-box {
+    display: inline;
+    align-items: center;
+    width: 350px;
+    position: relative;
+    padding-bottom: 90px;
+    text-align: left;
+    }
+
+    #blog .blog-img {
+        width: 250px;
+        height: 100%;
+        margin-right: 20px;
+        margin-left: -80px;
+    }
+
+    #blog img {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+        box-shadow: 12px 12px 15px rgba(0, 0, 0, 0.09);
+    }
+
+    #blog .blog-details {
+        width: 50%;
+        margin-top: 15px;
+    }
+
+    #blog .blog-details h4 {
+        width: 250px;
+        margin-left: -73px;
+    }
+
+    #blog .blog-details p {
+        width: 350px;
+        align-items: start;
+        margin-left: -128px;
+    }
+
+    #blog .blog-details a {
+        display: none;
+    }
+
+    #blog .blog-box h1 {
+        display: none;
+    }
+
+    /* Contact Section */
+
+    #contact-details {
+        flex-direction: column;
+    }
+
+    #contact-details .detail {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #contact-details .map {
+        display: none;
+    }
+
+    #contact-details .map2 {
+        display: inline;
+    }
+
+    /* Product Section */
+
+    #prodetails {
+    display: inline;
+    margin-top: 20px;
+    }
+
+    #prodetails .single-pro-image {
+        margin: 25px 0px 15px 39px;
+    }
+
+    #prodetails .single-pro-image video {
+        width: 200%;
+    }
+
+    #prodetails .single-pro-image {
+        width: 40%;
+        margin-right: 50px;
+    }
+
+    .small-img-group {
+        display: flex;
+        justify-content: space-between;
+        width: 313px;
+    }
+
+    .small-img-col {
+        flex-basis: 24%;
+        cursor: pointer;
+    }
+
+    #prodetails .single-pro-details {
+        width: 80%;
+        padding-top: 30px;
+        padding: 0px 0px 0px 35px;
+    }
+
+    /* Cart Section */
+
+    #cart-add {
+        flex-direction: column;
+    }
+
+}
+
+/* ----------------------------------------------------Ipad Mini------------------------------------------------------------------ */
+
+@media (max-width : 768px){
+
+    #navbar .search-bar {
+        display: flex;
+        background: #ffffff;
+        padding: 5px;
+        border-radius: 60px;
+    }
+
+    #header #navbar .search-bar input{
+        padding: 8px 10px;
+        flex: 1;
+        border: 0;
+        outline: none;
+        font-size: 15px;
+        color: #1a1a1a;
+        border-radius: 10px;
+        margin: 0 0 0 5px;
+    }
+
+
+    /* index section */
+
+    .block {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 15%;
+    }
+
+    
+
+    #feature .fe-box {
+        width: 250px;
+        text-align: center;
+        padding: 25px 15px;
+        box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+        border: 1px solid #cce7d0;
+        border-radius: 4px;
+        margin: 55px 20px;
+        margin-top: 90px;
+        height: 352px;
+    }
+
+    #product1 {
+    text-align: center;
+    }
+
+    #product1 .pro-container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    #product1 .pro {
+        align-items: center;
+        width: 43%;
+        min-width: 250px;
+        padding: 10px 12px;
+        border: 1px solid #cce7d0;
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.08);
+        margin: 15px 0;
+        transition: 0.2s ease;
+        position: relative;
+    }
+
+    #product1 .pro img {
+        width: 70%;
+    }
+
+    #card-slider1 {
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
+    }
+
+    #card-slider1 .slider-wrapper {
+        position: relative;
+        width: 35rem;
+        margin-left: 70px;
+    }
+
+    /* footer section */
+
+    #newsletter {
+        padding: 40px 20px;
+    }
+
+    #newsletter .form {
+        width: 100%;
+    }
+
+    #newsletter input {
+        font-size: 14px;
+        height: 49px;
+    }
+
+    #newsletter button {
+        font-size: 16px;
+        padding: 0 8px;
+    }
+
+    /* About Section */
+
+    #about-head {
+        display: inline;
+    }
+
+    #about-head .slider-wrapper .slider{
+        display: none;
+    }
+
+    #about-head .about-text {
+    justify-self: center;
+    width: 360px;
+    margin: 45px 0px 0px 15px;
+    }
+
+    .about-text p {
+        padding-top: 12px;
+    }
+
+    .about-text .mar-text {
+        font-size: 18px;
+        color: #ffffff;
+        width: 360px;
+    }
+
+    #blog .blog-box h1 {
+    color: #ffffff;
+    }
+
+    /* Contact Section */
+
+    #contact-details {
+        flex-direction: column;
+    }
+
+    #contact-details .detail {
+        width: 100%;
+        margin-bottom: 30px;
+        margin-left: -1px;
+    }
+
+    #contact-details .map {
+        display: inline;
+    }
+
+    #contact-details .map2 {
+        display: none;
+    }
+
+    /* Product Section */
+
+    #prodetails {
+    display: inline;
+    margin-top: 20px;
+    }
+
+    #prodetails .single-pro-image {
+        margin: 25px 0px 15px 75px;
+    }
+
+    #prodetails .single-pro-image video {
+        width: 200%;
+    }
+
+    #prodetails .single-pro-image {
+        width: 40%;
+        margin-right: 50px;
+    }
+
+    .small-img-group {
+        display: flex;
+        justify-content: space-between;
+        width: 613px;
+    }
+
+    .small-img-col {
+        flex-basis: 24%;
+        cursor: pointer;
+    }
+
+    #prodetails .single-pro-details {
+        width: 80%;
+        padding-top: 30px;
+        padding: 0px 0px 0px 75px;
     }
 }
