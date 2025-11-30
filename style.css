@@ -1464,6 +1464,12 @@ footer .copyright {
         padding: 0px 0px 0px 35px;
     }
 
+    #breadscum {
+        margin: 35px 0px 0px 38px;
+        color: #88878d;
+        font-size: 17px;
+    }
+
     /* Cart Section */
 
     #cart-add {
