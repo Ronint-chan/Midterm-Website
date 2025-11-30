@@ -821,6 +821,21 @@ footer .copyright {
     font-weight: 600;
 }
 
+#breadscum {
+    margin: 35px 0px 0px 78px;
+    color: #88878d;
+    font-size: 20px;
+}
+
+#breadscum a {
+    text-decoration: none;
+    color: #8d8989;
+}
+
+#breadscum a:hover {
+    color: #bebdc5;
+}
+
 /* Product Details */
 
 #prodetails {
