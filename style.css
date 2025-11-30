@@ -1459,7 +1459,7 @@ footer .copyright {
 
 /* ----------------------------------------------------Ipad Mini------------------------------------------------------------------ */
 
-@media (max-width : 768px){
+@media (max-width : 768px) and (min-width : 420){
 
     #navbar .search-bar {
         display: flex;
@@ -1529,18 +1529,6 @@ footer .copyright {
 
     #product1 .pro img {
         width: 70%;
-    }
-
-    #card-slider1 {
-    padding: 2rem;
-    text-align: center;
-    justify-content: center;
-    }
-
-    #card-slider1 .slider-wrapper {
-        position: relative;
-        width: 35rem;
-        margin-left: 70px;
     }
 
     /* footer section */
